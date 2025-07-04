@@ -161,6 +161,39 @@ npx hardhat run scripts/deploy.ts --network localhost
 ```
 
 ---
+## 🌐 Web Interface (Frontend)
+
+A simple **React + ethers.js** interface (no extra libraries) was developed to easily interact with the `FarmProportionalBonus` contract deployed on the **Sepolia** network.
+
+### 🧩 Available Features
+
+From the browser, a user can:
+
+* ✅ Connect their Metamask wallet
+* ✅ View their LP and DAPP token balances
+* ✅ Deposit 50 LP tokens
+* ✅ Withdraw 50 LP tokens
+* ✅ Claim generated rewards
+* ✅ Check pending rewards
+
+### 🗂 Frontend Structure
+
+* Folder: `/token-farm-frontend`
+* Main file: `App.tsx`
+* Contracts: ABIs of `FarmProportionalBonus`, `LPToken`, and `DAPToken` are located in the `/abi` folder
+* Contract addresses: read from `deployed_addresses.json`
+
+### 🚀 Instructions to run the frontend
+
+```bash
+cd token-farm-frontend
+npm install
+npm run dev
+```
+
+> Make sure your Metamask is connected to Sepolia and has enough funds to interact with the contracts.
+
+---
 
 ## 📅 Reference Links
 
@@ -171,5 +204,5 @@ npx hardhat run scripts/deploy.ts --network localhost
 
 ## ✉ Author
 
-**Luis A. Cerelli**
+**Luis Alberto Cerelli**
 Project developed as part of the Ethereum/Web3 course - ETH-KIPU.

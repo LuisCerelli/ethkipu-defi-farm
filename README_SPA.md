@@ -162,6 +162,42 @@ npx hardhat run scripts/deploy.ts --network localhost
 
 ---
 
+¡Perfecto! Vamos a añadir una nueva sección al final del README llamada `🌐 Interfaz Web (Frontend)` para reflejar lo que hiciste con React + ethers. Aquí tienes la versión modificada que puedes pegar justo antes de la sección `📅 Enlaces de referencia`:
+
+---
+
+## 🌐 Interfaz Web (Frontend)
+
+Se desarrolló una interfaz sencilla con **React + ethers.js** (sin librerías adicionales) que permite interactuar fácilmente con el contrato `FarmProportionalBonus` desplegado en la red **Sepolia**.
+
+### 🧩 Funcionalidades disponibles
+
+Desde el navegador, un usuario puede:
+
+* ✅ Conectar su wallet Metamask
+* ✅ Visualizar su balance de LP y DAPP tokens
+* ✅ Depositar 50 LP tokens
+* ✅ Retirar 50 LP tokens
+* ✅ Reclamar recompensas generadas
+* ✅ Consultar recompensas pendientes
+
+### 🗂 Estructura del frontend
+
+* Carpeta: `/token-farm-frontend`
+* Archivo principal: `App.tsx`
+* Contratos: ABI de `FarmProportionalBonus`, `LPToken` y `DAPToken` ubicados en la carpeta `/abi`
+* Dirección de contratos: leídas desde `deployed_addresses.json`
+
+### 🚀 Instrucciones para correr el frontend
+
+```bash
+cd token-farm-frontend
+npm install
+npm run dev
+```
+
+> Asegúrate de tener Metamask conectada a Sepolia y fondos suficientes para realizar interacciones.
+
 ## 📅 Enlaces de referencia
 
 * Documentación PancakeSwap: [https://docs.pancakeswap.finance/products/yield-farming/how-to-use-farms](https://docs.pancakeswap.finance/products/yield-farming/how-to-use-farms)
@@ -171,5 +207,5 @@ npx hardhat run scripts/deploy.ts --network localhost
 
 ## ✉ Autor
 
-**Luis A. Cerelli**
+**Luis Alberto Cerelli**
 Proyecto desarrollado como parte del curso de Ethereum/Web3 - ETH-KIPU.
